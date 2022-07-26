@@ -21,6 +21,7 @@ RUN apt update && \
 RUN apt install -y fonts-noto-color-emoji \
     zsh \
     gcc \
+    iputils-ping \
     nano \
     tmux \
     netcat-traditional \
