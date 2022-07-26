@@ -72,7 +72,8 @@ ENV PATH "$PATH:$GOPATH/bin:$GOROOT/bin"
 
 # Archivos de configuracion
 COPY conf /tmp
-RUN mv /tmp/.zshrc /root && \
+RUN mkdir -p $HOME/.cache/gitstatus && \
+    mv /tmp/.zshrc /root && \
     mv /tmp/.p10k.zsh /root && \
     mv /tmp/.tmux.conf /root && \
     mv /tmp/.tmux.conf.local /root
