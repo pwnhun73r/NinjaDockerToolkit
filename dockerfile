@@ -40,6 +40,16 @@ RUN apt install -y fonts-noto-color-emoji \
     rlwrap \
     lsof \
     tar \
+    fcrackzip \
+    cifs-utils \ 
+    ftp \
+    smbclient \
+    php \
+    telnet \
+    tcpdump \
+    whois \
+    host \
+    dig \
     scrub \
     gzip \
     pipx \
