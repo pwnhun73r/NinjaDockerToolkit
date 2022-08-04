@@ -87,7 +87,7 @@ RUN mkdir ${HOME}/tools && \
     evil-winrm \
     metasploit-framework \
     cewl \
-    && rm -rf /var/lib/ap/lists/*
+    && rm -rf /var/lib/apt/lists/*
 
 # Instalacion LSD y BAT
 RUN wget https://github.com/Peltoche/lsd/releases/download/0.22.0/lsd_0.22.0_amd64.deb && \
