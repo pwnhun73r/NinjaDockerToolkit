@@ -103,9 +103,9 @@ RUN wget https://github.com/Peltoche/lsd/releases/download/0.22.0/lsd_0.22.0_amd
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k && \
 # Instalar GO
     cd /opt && \
-    wget https://go.dev/dl/go1.17.8.linux-amd64.tar.gz && \
-    tar -xvf go1.17.8.linux-amd64.tar.gz -C /usr/local/ && \
-    rm go1.17.8.linux-amd64.tar.gz
+    wget https://go.dev/dl/go1.19.linux-amd64.tar.gz && \
+    tar -xvf go1.19.linux-amd64.tar.gz -C /usr/local/ && \
+    rm go1.19.linux-amd64.tar.gz
 
 ENV GOROOT "/usr/local/go"
 ENV GOPATH "/root/go"
