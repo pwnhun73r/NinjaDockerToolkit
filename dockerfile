@@ -133,6 +133,19 @@ RUN set -ex && \
     unzip awscliv2.zip && \
     ./aws/install && \
     rm ${HOME}/tools/awscliv2.zip && \
+# JWT_TOOL
+    cd ${HOME}/tools && \
+    git clone https://github.com/ticarpi/jwt_tool && \
+    python3 -m pip install termcolor cprint pycryptodomex requests && \
+    cd jwt_tool && \
+    chmod +x jwt_tool.py && \
+    ln -s ${HOME}/tools/jwt_tool/jwt_tool.py /usr/bin/jwt_tool && \
+# KR
+    cd ${HOME}/tools && \
+    wget https://github.com/assetnote/kiterunner/releases/download/v1.0.2/kiterunner_1.0.2_linux_amd64.tar.gz && \
+    tar -xvf kiterunner_1.0.2_linux_amd64.tar.gz && \
+    ln -s ${HOME}/tools/kr /usr/bin/kr && \
+    rm kiterunner_1.0.2_linux_amd64.tar.gz && \
 # Diccionarios
     cd ${HOME}/tools/wordlists && \
     wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt && \
@@ -153,4 +166,11 @@ RUN set -ex && \
 # Hashid
     pipx install hashid && \
 # Virtualenv
-    pipx install virtualenv
+    pipx install virtualenv && \
+# Mitmproxyswagger
+    pipx install mitmproxy2swagger && \
+# Arjun
+    pipx install arjun && \
+# Mitmproxy
+   pipx install mitmproxy
+
