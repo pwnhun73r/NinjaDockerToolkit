@@ -85,6 +85,7 @@ RUN mkdir ${HOME}/tools && \
     smbmap \
     exploitdb \
     evil-winrm \
+    passing-the-hash \
     metasploit-framework \
     cewl \
     && rm -rf /var/lib/apt/lists/*
